@@ -1,0 +1,68 @@
+﻿├─ app
+│  ├─ (protected)
+│  ├─ api
+│  │  ├─ assistants
+│  │  │  ├─ threads
+│  │  │  │  ├─ [threadId]
+│  │  │  │  │  ├─ messages
+│  │  │  │  │  │  ├─ route.ts
+│  │  │  │  │  ├─ run
+│  │  │  │  │  │  ├─ [runId]
+│  │  │  │  │  │  │  ├─ route.ts
+│  │  │  │  │  │  ├─ route.ts
+│  │  │  │  │  ├─ stream
+│  │  │  │  │  │  ├─ route.ts
+│  │  │  │  ├─ route.ts
+│  │  ├─ questions
+│  │  │  ├─ route.ts
+│  │  ├─ trivia
+│  │  │  ├─ route.ts
+│  │  ├─ whoBeI
+│  │  │  ├─ question
+│  │  │  │  ├─ route.ts
+│  │  │  ├─ save
+│  │  │  │  ├─ route.ts
+│  │  │  ├─ start
+│  │  │  │  ├─ route.ts
+│  ├─ chat
+│  │  ├─ page.tsx
+│  ├─ logicGrid
+│  │  ├─ page.tsx
+│  ├─ login
+│  │  ├─ page.tsx
+│  ├─ patterns
+│  ├─ register
+│  │  ├─ page.tsx
+│  ├─ riddles
+│  │  ├─ page.tsx
+│  ├─ assistant-config.ts
+│  ├─ globals.css
+│  ├─ layout.tsx
+│  ├─ page.tsx
+│  ├─ shadyt.svg
+├─ components
+│  ├─ tools
+│  │  ├─ file-viewer.module.css
+│  │  ├─ file-viewer.tsx
+│  ├─ whoBeI
+│  │  ├─ WhoBeIDebugPanel.tsx
+│  ├─ Button.tsx
+│  ├─ Card.tsx
+│  ├─ chat.module.css
+│  ├─ Chat.tsx
+│  ├─ QuestionCard.tsx
+│  ├─ Spinner.tsx
+│  ├─ WhoBeIChat.tsx
+│  ├─ WhoBeIStart.tsx
+├─ data
+│  ├─ characterProfiles.json
+│  ├─ characterProfiles.ts
+├─ lib
+│  ├─ characterProfiles.ts
+│  ├─ helperFunctions.ts
+│  ├─ openai.ts
+│  ├─ prisma.ts
+│  ├─ utils.ts
+│  ├─ whoBeIUtils.ts
+├─ types
+│  ├─ base.ts

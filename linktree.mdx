@@ -1,0 +1,171 @@
+# 📁 Project Structure & Links
+
+## 🧱 File Tree
+
+export const Tree = () => (
+  <pre>{`
+├─ app
+│  ├─ api
+│  │  ├─ assistants
+│  │  │  └─ threads
+│  │  │     ├─ route.ts
+│  │  │     └─ [threadId]
+│  │  │        ├─ actions
+│  │  │        │  └─ route.ts
+│  │  │        ├─ messages
+│  │  │        │  └─ route.ts
+│  │  │        ├─ run
+│  │  │        │  └─ route.ts
+│  │  │        ├─ runs
+│  │  │        │  ├─ route.ts
+│  │  │        │  └─ [runId]
+│  │  │        │     └─ route.ts
+│  │  │        └─ stream
+│  │  │           └─ route.ts
+│  │  ├─ questions
+│  │  │  └─ route.ts
+│  │  ├─ trivia
+│  │  │  └─ route.ts
+│  │  └─ whoBeI
+│  │     ├─ question
+│  │     │  └─ route.ts
+│  │     ├─ save
+│  │     │  ├─ latest
+│  │     │  │  └─ route.ts
+│  │     │  └─ route.ts
+│  │     └─ start
+│  │        └─ route.ts
+│  ├─ assistant-config.ts
+│  ├─ globals.css
+│  ├─ layout.tsx
+│  ├─ logicGrid
+│  │  └─ page.tsx
+│  ├─ login
+│  │  └─ page.tsx
+│  ├─ page.tsx
+│  ├─ patterns
+│  │  └─ page.tsx
+│  ├─ providers
+│  │  ├─ auth-provider.tsx
+│  │  ├─ index.tsx
+│  │  ├─ redux-provider.tsx
+│  │  └─ theme-provider.tsx
+│  ├─ register
+│  │  └─ page.tsx
+│  ├─ riddles
+│  │  └─ page.tsx
+│  ├─ shadyt.svg
+│  └─ whoBeI
+│     └─ page.tsx
+├─ components
+│  ├─ Button.tsx
+│  ├─ Card.tsx
+│  ├─ chat.module.css
+│  ├─ Chat.tsx
+│  ├─ KillThreadButton.tsx
+│  ├─ Navbar.tsx
+│  ├─ QuestionCard.tsx
+│  ├─ Spinner.tsx
+│  ├─ tools
+│  │  ├─ file-viewer.module.css
+│  │  └─ file-viewer.tsx
+│  ├─ ui-kit
+│  │  ├─ PaperBlock.tsx
+│  │  └─ TextureOverlay.tsx
+│  ├─ whoBeI
+│  │  └─ WhoBeIDebugPanel.tsx
+│  ├─ WhoBeIChat.tsx
+│  └─ WhoBeIStart.tsx
+├─ data
+│  ├─ characterProfiles.json
+│  ├─ characterProfiles.ts
+│  └─ latestProfile.json
+├─ lib
+│  ├─ assistant
+│  │  └─ utils.ts
+│  ├─ helperFunctions.ts
+│  ├─ openai.ts
+│  ├─ prisma.ts
+│  ├─ utils.ts
+│  └─ whoBeI
+│     ├─ characterProfiles.ts
+│     ├─ gameLogic.ts
+│     └─ sessionStore.ts
+├─ my-tree.txt
+├─ store
+│  ├─ index.ts
+│  └─ slices
+│     ├─ appSlice.ts
+│     ├─ settingsSlice.ts
+│     └─ userSlice.ts
+└─ types
+   └─ base.ts
+`}</pre>
+);
+
+<Tree />
+
+---
+
+## 🔗 Links
+
+- [app/api/assistants/threads/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/assistants/threads/route.ts)
+- [app/api/assistants/threads/[threadId]/actions/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/assistants/threads/%5BthreadId%5D/actions/route.ts)
+- [app/api/assistants/threads/[threadId]/messages/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/assistants/threads/%5BthreadId%5D/messages/route.ts)
+- [app/api/assistants/threads/[threadId]/run/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/assistants/threads/%5BthreadId%5D/run/route.ts)
+- [app/api/assistants/threads/[threadId]/runs/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/assistants/threads/%5BthreadId%5D/runs/route.ts)
+- [app/api/assistants/threads/[threadId]/runs/[runId]/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/assistants/threads/%5BthreadId%5D/runs/%5BrunId%5D/route.ts)
+- [app/api/assistants/threads/[threadId]/stream/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/assistants/threads/%5BthreadId%5D/stream/route.ts)
+- [app/api/questions/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/questions/route.ts)
+- [app/api/trivia/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/trivia/route.ts)
+- [app/api/whoBeI/question/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/whoBeI/question/route.ts)
+- [app/api/whoBeI/save/latest/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/whoBeI/save/latest/route.ts)
+- [app/api/whoBeI/save/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/whoBeI/save/route.ts)
+- [app/api/whoBeI/start/route.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/api/whoBeI/start/route.ts)
+- [app/assistant-config.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/assistant-config.ts)
+- [app/globals.css](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/globals.css)
+- [app/layout.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/layout.tsx)
+- [app/logicGrid/page.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/logicGrid/page.tsx)
+- [app/login/page.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/login/page.tsx)
+- [app/page.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/page.tsx)
+- [app/patterns/page.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/patterns/page.tsx)
+- [app/providers/auth-provider.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/providers/auth-provider.tsx)
+- [app/providers/index.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/providers/index.tsx)
+- [app/providers/redux-provider.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/providers/redux-provider.tsx)
+- [app/providers/theme-provider.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/providers/theme-provider.tsx)
+- [app/register/page.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/register/page.tsx)
+- [app/riddles/page.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/riddles/page.tsx)
+- [app/shadyt.svg](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/shadyt.svg)
+- [app/whoBeI/page.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/app/whoBeI/page.tsx)
+- [components/Button.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/Button.tsx)
+- [components/Card.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/Card.tsx)
+- [components/chat.module.css](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/chat.module.css)
+- [components/Chat.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/Chat.tsx)
+- [components/KillThreadButton.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/KillThreadButton.tsx)
+- [components/Navbar.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/Navbar.tsx)
+- [components/QuestionCard.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/QuestionCard.tsx)
+- [components/Spinner.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/Spinner.tsx)
+- [components/tools/file-viewer.module.css](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/tools/file-viewer.module.css)
+- [components/tools/file-viewer.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/tools/file-viewer.tsx)
+- [components/ui-kit/PaperBlock.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/ui-kit/PaperBlock.tsx)
+- [components/ui-kit/TextureOverlay.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/ui-kit/TextureOverlay.tsx)
+- [components/whoBeI/WhoBeIDebugPanel.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/whoBeI/WhoBeIDebugPanel.tsx)
+- [components/WhoBeIChat.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/WhoBeIChat.tsx)
+- [components/WhoBeIStart.tsx](https://github.com/Cstannahill/ai-trivia-app/tree/main/components/WhoBeIStart.tsx)
+- [data/characterProfiles.json](https://github.com/Cstannahill/ai-trivia-app/tree/main/data/characterProfiles.json)
+- [data/characterProfiles.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/data/characterProfiles.ts)
+- [data/latestProfile.json](https://github.com/Cstannahill/ai-trivia-app/tree/main/data/latestProfile.json)
+- [lib/assistant/utils.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/lib/assistant/utils.ts)
+- [lib/helperFunctions.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/lib/helperFunctions.ts)
+- [lib/openai.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/lib/openai.ts)
+- [lib/prisma.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/lib/prisma.ts)
+- [lib/utils.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/lib/utils.ts)
+- [lib/whoBeI/characterProfiles.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/lib/whoBeI/characterProfiles.ts)
+- [lib/whoBeI/gameLogic.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/lib/whoBeI/gameLogic.ts)
+- [lib/whoBeI/sessionStore.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/lib/whoBeI/sessionStore.ts)
+- [my-tree.txt](https://github.com/Cstannahill/ai-trivia-app/tree/main/my-tree.txt)
+- [store/index.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/store/index.ts)
+- [store/slices/appSlice.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/store/slices/appSlice.ts)
+- [store/slices/settingsSlice.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/store/slices/settingsSlice.ts)
+- [store/slices/userSlice.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/store/slices/userSlice.ts)
+- [types/base.ts](https://github.com/Cstannahill/ai-trivia-app/tree/main/types/base.ts)
